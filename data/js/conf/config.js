@@ -39,48 +39,26 @@ config.domains = {
     "fragrancenet.com": "fragrancenet",
     "victoriassecret.com": "victoriassecret",
 };
-/*
-config.service = {
-    //Trang chủ website
-    website: "http://www.alodathang.com/",
-    // View link Cart
-    cartLink: "http://www.alodathang.com/view-cart.html",
-    // Popup
-    pop: "http://www.alodathang.com/api/addon_html.php",
-    http: {
-        rate: "http://www.alodathang.com/api/exchange_rate.php",
-        addCart: "http://www.alodathang.com/api/addToCart.php",
-		addCart:"http://118.107.76.19:5464/Cart/Add",
-        viewCart: "http://www.alodathang.com/api/viewCart.php",
-        calPrice: "http://www.alodathang.com/api/Price.php?"
-    },
-    https: {
-        rate: "http://www.alodathang.com/api/exchange_rate.php",
-        addCart: "http://www.alodathang.com/api/addToCart.php",
-        viewCart: "http://www.alodathang.com/api/viewCart.php",
-        calPrice: "http://www.alodathang.com/api/Price.php?"
-    }
-}; */
 
 
 config.service = {
     //Trang chủ website
-    website: "http://www.adathang.vn/",
+    website: "http://nguyendangdungha.com/mymvc/",
     // View link Cart
-    cartLink: "https://www.adathang.vn/Cart",
+    cartLink: "http://nguyendangdungha.com/mymvc/cart",
     // Popup
-    pop: "https://www.adathang.vn/Cart/ViewCart",
+    pop: "http://nguyendangdungha.com/mymvc/cart/",
     http: {
-        rate: "https://www.adathang.vn/Cart/Add",
-		    addCart:"http://www.adathang.vn/Cart/Add",
-        viewCart: "http://www.adathang.vn/Cart/ViewCart",
-        calPrice: "http://www.adathang.vn/api/Price.php?"
+        rate: "http://nguyendangdungha.com/mymvc/cart/add_product",
+		addCart:"http://nguyendangdungha.com/mymvc/cart/add_product",
+        viewCart: "http://nguyendangdungha.com/mymvc/cart",
+        // calPrice: "http://nguyendangdungha.com/mymvc/api/Price.php?"
     },
     https: {
-        rate: "https://www.adathang.vn/Cart/Add",
-        addCart:"https://www.adathang.vn/Cart/Add",
-        viewCart: "https://www.adathang.vn/Cart/ViewCart",
-        calPrice: "https://www.adathang.vn/api/Price.php?"
+        rate: "http://nguyendangdungha.com/mymvc/cart/add_product",
+        addCart:"http://nguyendangdungha.com/mymvc/cart/add_product",
+        viewCart: "http://nguyendangdungha.com/mymvc/cart",
+        // calPrice: "http://nguyendangdungha.com/mymvc/api/Price.php?"
     },
     translate: "https://www.googleapis.com/language/translate/v2?key=AIzaSyDQ9JhOpkWcbk5yrNsNWsbJGQgNzXgWg6s"
 };
