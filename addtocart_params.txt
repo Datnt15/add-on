@@ -1,0 +1,17 @@
+type:amazoncom
+item_id:B00I15SB16
+item_name:Kindle E-reader, 6" Glare-Free Touchscreen Display, Wi-Fi - Includes Special Offers
+item_price:79.99
+item_image:http://ecx.images-amazon.com/images/I/61W0XGb88nL._SL1000_.jpg
+seller_name:
+seller_id:
+quantity:1
+shippingWeight:0
+color_size:
+data_value:
+item_link:http://www.amazon.com/Amazon-Kindle-6-Inch-4GB-eReader/dp/B00I15SB16?ie=UTF8&ref_=ods_bn_cat_eink_comp_bn
+ct:187SPMKNFEE7D4Q59GCN+s-1KS8HDZ2S9KEDPG7V7WT|1462790932343
+currency:USD
+is_addon:1
+version:20140225
+comment:

@@ -1,0 +1,38 @@
+{
+   "author": "Nguyen Tien Dat",
+   "background": {
+      "scripts": [ "data/js/background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "data/icon/logo.png",
+      "default_popup": "data/index.html",
+      "default_title": "Nhập Hàng Siêu Tốc"
+   },
+   "content_scripts": [ {
+      "js": [ "data/js/plugin/jquery/jquery.min.js", "data/js/plugin/utils/textutils.js", "data/js/conf/config.js", "data/js/conf/action.js", "lib/chrome.js" ],
+      "matches": [ "http://*.taobao.com/*", "https://*.taobao.com/*", "http://*.tmall.com/*", "https://*.tmall.com/*", "http://*.1688.com/*", "https://*.1688.com/*" ]
+   }, {
+      "js": [ "data/js/bin/taobao.js" ],
+      "matches": [ "http://*.taobao.com/*", "https://*.taobao.com/*" ]
+   }, {
+      "js": [ "data/js/bin/tmall.js" ],
+      "matches": [ "http://*.tmall.com/*", "https://*.tmall.com/*" ]
+   }, {
+      "js": [ "data/js/bin/web1688.js" ],
+      "matches": [ "http://*.1688.com/*", "https://*.1688.com/*" ]
+   } ],
+   "description": "nhaphangsieutoc, Cho phép bạn đặt hàng, nhận báo giá trực tuyến tại các website thương mại điện tử",
+   "icons": {
+      "128": "data/icon/icon_128.png",
+      "16": "data/icon/icon_16.png",
+      "48": "data/icon/icon_48.png"
+   },
+   "key": "BA1443C11CD8827F8E4BE9F6864EAA18542E34B20716F4CD6FA3616640C7B973EB5A0C0B841EBE1BCF6255629C17297E1459E78B7E78066A7B09DDF5813EAAD94960641E44FF8625773A801D1751839056355B263EB568EB0C79826974A56E0339F50C56E3AB25ACB49210D682926DBC",
+   "manifest_version": 1,
+   "name": "Nhập Hàng Siêu Tốc",
+   "permissions": [ "tabs", "activeTab", "webNavigation", "https://ajax.googleapis.com/", "http://www.nhaphangsieutoc.com/", "https://script.google.com/" ],
+   "short_name": "nhaphangsieutoc",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0",
+   "web_accessible_resources": [ "data/js/plugin/bootstrap/css/*", "data/js/plugin/bootstrap/js/*" ]
+}
