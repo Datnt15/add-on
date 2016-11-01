@@ -342,13 +342,7 @@ action.updatepage = function (s) {
 };
 
 action.createModal = function(){
-    /*var cartModal =  '<div id="viewCartModel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">'
-        + '     <div class="modal-dialog modal-lg">'
-        + '         <div class="modal-content">'
-        + '             <iframe src="https://www.adathang.vn/Cart/ViewCart" width="100%" height="100%" frameborder="0"></iframe>'
-        + '         </div>'
-        + '     </div>'
-        + ' </div>';*/
+    
 
 var cartModal = '<div id="animatedModal">'
             +'<div class="close-animatedModal"> '
