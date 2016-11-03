@@ -28,7 +28,7 @@
       "48": "data/icon/icon_48.png"
    },
    "key": "BA1443C11CD8827F8E4BE9F6864EAA18542E34B20716F4CD6FA3616640C7B973EB5A0C0B841EBE1BCF6255629C17297E1459E78B7E78066A7B09DDF5813EAAD94960641E44FF8625773A801D1751839056355B263EB568EB0C79826974A56E0339F50C56E3AB25ACB49210D682926DBC",
-   "manifest_version": 1,
+   "manifest_version": 2,
    "name": "Nhập Hàng Siêu Tốc",
    "permissions": [ "tabs", "activeTab", "webNavigation", "https://ajax.googleapis.com/", "http://www.nhaphangsieutoc.com/", "https://script.google.com/" ],
    "short_name": "nhaphangsieutoc",

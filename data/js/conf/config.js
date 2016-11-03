@@ -41,24 +41,42 @@ config.domains = {
 };
 
 
+// config.service = {
+//     //Trang chủ website
+//     website: "http://nguyendangdungha.com/mymvc/",
+//     // View link Cart
+//     cartLink: "http://nguyendangdungha.com/mymvc/cart",
+//     // Popup
+//     pop: "http://nguyendangdungha.com/mymvc/cart/",
+//     http: {
+//         rate: "http://nguyendangdungha.com/mymvc/cart/",
+// 		addCart:"http://nguyendangdungha.com/mymvc/cart/addon_add_item",
+//         viewCart: "http://nguyendangdungha.com/mymvc/cart",
+//     },
+//     https: {
+//         rate: "http://nguyendangdungha.com/mymvc/cart/",
+//         addCart:"http://nguyendangdungha.com/mymvc/cart/addon_add_item",
+//         viewCart: "http://nguyendangdungha.com/mymvc/cart",
+//     },
+//     translate: "https://www.googleapis.com/language/translate/v2?key=AIzaSyDQ9JhOpkWcbk5yrNsNWsbJGQgNzXgWg6s"
+// };
+
 config.service = {
     //Trang chủ website
-    website: "http://nguyendangdungha.com/mymvc/",
+    website: "https://localhost/mymvc/",
     // View link Cart
-    cartLink: "http://nguyendangdungha.com/mymvc/cart",
+    cartLink: "https://localhost/mymvc/cart",
     // Popup
-    pop: "http://nguyendangdungha.com/mymvc/cart/",
+    pop: "https://localhost/mymvc/cart/",
     http: {
-        rate: "http://nguyendangdungha.com/mymvc/cart/add_product",
-		addCart:"http://nguyendangdungha.com/mymvc/cart/add_product",
-        viewCart: "http://nguyendangdungha.com/mymvc/cart",
-        // calPrice: "http://nguyendangdungha.com/mymvc/api/Price.php?"
+        rate: "https://localhost/mymvc/cart/",
+        addCart:"https://localhost/mymvc/cart/addon_add_item",
+        viewCart: "https://localhost/mymvc/cart",
     },
     https: {
-        rate: "http://nguyendangdungha.com/mymvc/cart/add_product",
-        addCart:"http://nguyendangdungha.com/mymvc/cart/add_product",
-        viewCart: "http://nguyendangdungha.com/mymvc/cart",
-        // calPrice: "http://nguyendangdungha.com/mymvc/api/Price.php?"
+        rate: "https://localhost/mymvc/cart/",
+        addCart:"https://localhost/mymvc/cart/addon_add_item",
+        viewCart: "https://localhost/mymvc/cart",
     },
     translate: "https://www.googleapis.com/language/translate/v2?key=AIzaSyDQ9JhOpkWcbk5yrNsNWsbJGQgNzXgWg6s"
 };

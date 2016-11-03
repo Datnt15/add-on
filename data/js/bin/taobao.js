@@ -22,7 +22,7 @@ taobao.init = function () {
  * @returns {taobao.getId.taobaoAnonym$1}
  */
 taobao.getId = function () {
-    var id = $("input[name=item_id]").val();
+    var id = document.querySelectorAll('input[name="item_id"]')[0].value;
     return typeof id == 'undefined' ? null : id;
 };
 
@@ -63,14 +63,14 @@ taobao.getImage = function () {
 
         img_src = document.getElementById('J_ImgBooth').getAttribute("src");
     } catch (e) {
-        //console.log("Image not found!" + e);
+        console.log("Không tìm được ảnh" + e);
     }
     return img_src;
 };
 
 taobao.getTitle = function () {
     var tb = "";
-    tb = $('meta[property="og:title"]').attr("content");
+    tb = document.querySelectorAll('meta[property="og:title"]')[0].content;
     if (tb == 'undefined' || tb == null || tb == '') {
         tb = $('h3.tb-main-title').text().trim();
     }
@@ -118,7 +118,7 @@ taobao.getPrice = function () {
                     }
                     else {
                         price = promotion_price.innerHTML.match(/[0-9]*[\.,]?[0-9]+/g);
-                        //console.log('hanh'+price);
+                        console.log('Giá '+price);
                     }
                 }
             }
