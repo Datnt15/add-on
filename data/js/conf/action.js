@@ -99,12 +99,12 @@ action.init = function (_objectId, _domain, _browse) {
             if (stt == 'success') {
                 action.showSuccess("BẠN ĐÃ CHO SẢN PHẨM VÀO GIỎ HÀNG THÀNH CÔNG",
                         'SL:&nbsp;' + item.quantity + '&nbsp;&nbsp;Giá SP:&nbsp;' + item.item_price + '&nbsp;' + e.getCurrency());
-                
             }else {
                 if (stt == 'not_logged_in') {
                     action.showError("Bạn cần login trên trang Nhaphangsieutoc để sử dụng tính năng này.");
-                }else{
-                    
+                }else if (stt == 'balance_not_enought') {
+                    action.showError("Số dư tài khoản không đủ để đặt hàng!");
+                }else if (stt == 'failured') {
                     action.showError("Có lỗi xảy ra trong quá trình thêm sản phẩm vào giỏ hàng. Vui lòng thử lại. Xin lỗi về sự gián đoạn này!");
                 }
             }
@@ -229,7 +229,7 @@ action.getRate = function () {
             action.params.rate = rate;
             return;
         }
-        ajax.get(config.service.https.rate, function (data) {
+        ajax.get(config.service.http.rate, function (data) {
             //rate = Number(data[e.getCurrency().toLowerCase()]);
             rate = Number(data.Rate);
             if (typeof rate != 'undefined' && rate != null && rate != "") {
@@ -287,6 +287,7 @@ action.getHtml = function (boxComment) {
     s += '</div>';
     return s;
 };
+
 
 // action.showCart = function () {
 //     //var url = config.service.http.viewCart;
@@ -453,7 +454,15 @@ ajax.endcode = function (_item) {
  * @returns {undefined}
  */
 ajax.submit = function (_url, _params, fn) {
-
+    // alert( $("#first_iframe").contents().find("body").html() );
+    // chrome.runtime.sendMessage({
+    //     method: 'POST',
+    //     action: 'xhttp',
+    //     url: _url,
+    //     data: ajax.endcode(_params)
+    // }, function(responseText) {
+    //     fn(responseText);
+    // });
     var xhttp = new XMLHttpRequest();
     xhttp.open('POST', _url, true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -466,6 +475,7 @@ ajax.submit = function (_url, _params, fn) {
         }
     };
     xhttp.send(ajax.endcode(_params));
+    // 
 };
 
 /**

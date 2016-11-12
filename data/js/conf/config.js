@@ -41,42 +41,22 @@ config.domains = {
 };
 
 
-// config.service = {
-//     //Trang chủ website
-//     website: "http://nguyendangdungha.com/mymvc/",
-//     // View link Cart
-//     cartLink: "http://nguyendangdungha.com/mymvc/cart",
-//     // Popup
-//     pop: "http://nguyendangdungha.com/mymvc/cart/",
-//     http: {
-//         rate: "http://nguyendangdungha.com/mymvc/cart/",
-// 		addCart:"http://nguyendangdungha.com/mymvc/cart/addon_add_item",
-//         viewCart: "http://nguyendangdungha.com/mymvc/cart",
-//     },
-//     https: {
-//         rate: "http://nguyendangdungha.com/mymvc/cart/",
-//         addCart:"http://nguyendangdungha.com/mymvc/cart/addon_add_item",
-//         viewCart: "http://nguyendangdungha.com/mymvc/cart",
-//     },
-//     translate: "https://www.googleapis.com/language/translate/v2?key=AIzaSyDQ9JhOpkWcbk5yrNsNWsbJGQgNzXgWg6s"
-// };
-
 config.service = {
     //Trang chủ website
-    website: "https://localhost/mymvc/",
+    website: "https://localhost/nhaphang/",
     // View link Cart
-    cartLink: "https://localhost/mymvc/cart",
+    cartLink: "https://localhost/nhaphang/cart",
     // Popup
-    pop: "https://localhost/mymvc/cart/",
+    pop: "https://localhost/nhaphang/cart/",
     http: {
-        rate: "https://localhost/mymvc/cart/",
-        addCart:"https://localhost/mymvc/cart/addon_add_item",
-        viewCart: "https://localhost/mymvc/cart",
+        rate: "https://localhost/nhaphang/cart/",
+        addCart:"https://localhost/nhaphang/cart/addon_add_item",
+        viewCart: "https://localhost/nhaphang/cart",
     },
     https: {
-        rate: "https://localhost/mymvc/cart/",
-        addCart:"https://localhost/mymvc/cart/addon_add_item",
-        viewCart: "https://localhost/mymvc/cart",
+        rate: "https://localhost/nhaphang/cart/",
+        addCart:"https://localhost/nhaphang/cart/addon_add_item",
+        viewCart: "https://localhost/nhaphang/cart",
     },
     translate: "https://www.googleapis.com/language/translate/v2?key=AIzaSyDQ9JhOpkWcbk5yrNsNWsbJGQgNzXgWg6s"
 };
