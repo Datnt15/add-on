@@ -43,20 +43,20 @@ config.domains = {
 
 config.service = {
     //Trang chủ website
-    website: "https://localhost/nhaphang/",
+    website: "https://192.168.0.105/nhaphang/",
     // View link Cart
-    cartLink: "https://localhost/nhaphang/cart",
+    cartLink: "https://192.168.0.105/nhaphang/cart",
     // Popup
-    pop: "https://localhost/nhaphang/cart/",
+    pop: "https://192.168.0.105/nhaphang/cart/",
     http: {
-        rate: "https://localhost/nhaphang/cart/",
-        addCart:"https://localhost/nhaphang/cart/addon_add_item",
-        viewCart: "https://localhost/nhaphang/cart",
+        rate: "https://192.168.0.105/nhaphang/cart/",
+        addCart:"https://192.168.0.105/nhaphang/cart/addon_add_item",
+        viewCart: "https://192.168.0.105/nhaphang/cart",
     },
     https: {
-        rate: "https://localhost/nhaphang/cart/",
-        addCart:"https://localhost/nhaphang/cart/addon_add_item",
-        viewCart: "https://localhost/nhaphang/cart",
+        rate: "https://192.168.0.105/nhaphang/cart/",
+        addCart:"https://192.168.0.105/nhaphang/cart/addon_add_item",
+        viewCart: "https://192.168.0.105/nhaphang/cart",
     },
     translate: "https://www.googleapis.com/language/translate/v2?key=AIzaSyDQ9JhOpkWcbk5yrNsNWsbJGQgNzXgWg6s"
 };
